@@ -1,0 +1,23 @@
+CREATE TABLE video_games (id integer primary key, item TEXT, system TEXT, price INTEGER, rating INTEGER);
+
+INSERT INTO video_games VALUES
+(1, "Fortnite_DLC", "switch",0, 5),
+(2, "Minecraft", "switch", 49.99, 4),
+(3, "MilesMorales", "playstation5", 59.99, 5),
+(4, "AmongUS", "PC", 19.99, 3),
+(5, "Fall_Guys", "PC", 60, 4),
+(6, "AvengersLegos", "XBOX", 30, 2),
+(7, "Harry_Potter", "XBOX", 20, 2),
+(8, "Hello_Neighbor", "switch", 30, 2),
+(9, "LegoMarvel", "switch", 20, 2),
+(10, "JurrasicPark", "switch", 15, 3),
+(11, "Sonic", "playstation5", 30, 4),
+(12, "Sonic2", "playstation5", 25, 3),
+(13, "Sonic_pinball", "playstation5", 25, 2),
+(14, "MarioParty", "switch", 60, 5),
+(15, "MarioGolf", "switch", 60, 4);
+SELECT * FROM video_games;
+
+SELECT * FROM video_games ORDER BY price;
+
+SELECT * FROM video_games WHERE rating >=3 ORDER BY price;
